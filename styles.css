@@ -1,0 +1,401 @@
+@font-face {
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/merriweather/v30/u-4n0qyriQwlOrhSvowK_l521wRZWMf6hPvhPQ.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+  @font-face {
+    font-family: 'Young Serif';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/youngserif/v2/3qTpojO2nS2VtkB3KtkQZ1t93kY6ah7E.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+body {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+
+  /*--NAV BAR--*/
+
+.navbar {
+    background-color: #594B20;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Merriweather";
+    color: #F2F0D5;
+    width: 100%;
+   position: fixed;
+    top: 0;
+    z-index: 999;
+}
+
+.treelogo img {
+    height: 4rem;
+    padding-left: 1rem;
+}
+
+.navbar .navlist {
+    display: flex;
+}
+
+.navbar .navlist .navitem {
+    list-style: none;
+    padding-right: 2rem;
+}
+
+/*--HERO--*/
+
+.bigpic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("./resources/john-towner-3Kv48NS4WUU-unsplash.jpg");
+    height: 80vh;
+    margin-top: 5rem;
+    background-size: cover;
+
+}
+
+.bigpic .wide {
+    font-size: 6rem;
+    font-family: "Young Serif";
+    color: #F2F0D5;
+    margin: 0;
+    letter-spacing: 0.4rem;
+}
+
+.bigpic .mobile {
+    display: none;
+}
+
+.bigpic p {
+    font-family: "Merriweather";
+    color: #F2F0D5;
+
+}
+
+
+/*--Cards--*/
+
+.cards {
+    display: flex;
+    background-color: #F2F0D5;
+    justify-content: center;
+    padding: 5rem;
+    color: #594B20;
+    flex-shrink: 1;
+}
+
+
+.cards .imagecard img {
+    width: 25rem;
+    height: 25rem;
+    min-width: 18rem;
+    min-height: 18rem;
+    object-fit: cover;
+}
+
+.cards .textcard {
+    width: 25rem;
+    height: 25rem;
+    min-width: 18rem;
+    min-height: 18rem;
+    background-color: #94A69F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem;
+
+}
+
+.textcard h2 {
+    font-family: "Young Serif";
+    font-size: 2rem;
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+.textcard p {
+    font-family: "Merriweather";
+    text-align: center;
+    margin: 0;
+    padding: 0 3rem;
+
+}
+
+.cards .imagecard, .cards .textcard {
+    box-sizing: border-box;
+}
+
+
+
+
+
+/*--Activities--*/
+
+
+.greenboxes {
+    display: grid;
+    background-color: #94A69F;
+    color: #594B20;
+    grid-template-rows: repeat(2, 15rem);
+    grid-template-columns: repeat(2, 15rem);
+    gap: 2rem;
+    grid-template-areas: 
+    "camp star"
+    "backpack rock";
+    justify-content: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+
+}
+
+.box {
+    border: 4px solid #8C7A1C;
+    background-color: #F2F0D5;
+    display: flex;            /* Make this a flex container */
+    align-items: center;      /* Center content vertically */
+    justify-content: center;  /* Center content horizontally */
+    flex-direction: column;   /* Stack the content vertically */
+    padding: 1rem; 
+}
+
+.greenboxes h2 {
+    font-family: "Young Serif";
+}
+
+.greenboxes p {
+    font-family: "Merriweather";
+}
+
+#camp {
+    grid-area: camp;
+    text-align: center;
+}
+
+#star {
+    grid-area: star;
+    text-align: center;
+
+}
+
+#backpack {
+    grid-area: backpack;
+    text-align: center;
+
+}
+
+#rock {
+    grid-area: rock;
+    text-align: center;
+
+}
+
+
+
+
+/*--Newsletter--*/
+
+
+.newsletter-section {
+    background-color: #F2F0D5;
+    padding: 2rem;
+    text-align: center;
+}
+
+.newsletter-section h2 {
+    font-family: "Young Serif";
+}
+
+.newsletter-section p {
+    font-family: "Merriweather";
+}
+
+.newsletter-form {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem; /* creates space between the input and button */
+}
+
+.newsletter-form input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-family: "Merriweather";
+    border: 1px solid #594B20;
+    outline: none;
+    max-width: 30%;
+    border-radius: 5px;
+    flex: 1; /* Allows the input to take up available space */
+}
+
+.newsletter-form button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-family: "Merriweather";
+    background-color: #594B20;
+    color: #F2F0D5;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.newsletter-form button:hover {
+    background-color: #8C7A1C;
+}
+
+
+
+/*--Footer--*/
+
+
+
+.footernav {
+    background-color: #594B20;
+    height: 5rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: "Merriweather";
+    color: #F2F0D5;
+    width: 100%;
+}
+
+.treelogo img {
+    height: 4rem;
+    padding-left: 1rem;
+}
+
+.footernav .navlist {
+    display: flex;
+}
+
+.footernav .navlist .navitem {
+    list-style: none;
+    padding-left: 2rem;
+}
+
+
+/*--Media Queries--*/
+
+
+@media (max-width: 768px) {
+    .cards .imagecard, 
+    .cards .textcard {
+        width: 20rem;   /* take up the full width of the .cards container */
+        height: 20rem;  /* adjust height automatically to content */
+    }
+
+    .cards .imagecard img {
+        width: 100%;   /* ensure image adjusts to the width of its container */
+        height: 20rem;  /* let height adjust automatically to maintain aspect ratio */
+        max-height: 20rem;  /* you can set a maximum height if needed */
+    }
+}
+
+@media (max-width: 425px) {
+    .cards {
+        flex-direction: column-reverse; /* stack cards vertically */
+        justify-content: center;
+        align-items: center;
+        padding-top: 2rem;
+    }
+    
+    .cards .imagecard, 
+    .cards .textcard {
+        width: 18rem;   /* take up the full width of the .cards container */
+        height: 18rem;  /* adjust height automatically to content */
+    }
+
+    .cards .textcard {
+        padding: 0;
+    }
+
+    .cards .imagecard img {
+        width: 100%;   /* ensure image adjusts to the width of its container */
+        height: 20rem;  /* let height adjust automatically to maintain aspect ratio */
+        max-height: 20rem;  /* you can set a maximum height if needed */
+    }
+
+    .greenboxes {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .box {
+        width: 15rem;
+    }
+
+    .newsletter-form input {
+        max-width: 50%;
+    }
+
+
+
+    .bigpic .wide {
+        display: none;
+    }
+    
+    .bigpic .mobile {
+        display: block;
+        font-size: 4rem;
+        font-family: "Young Serif";
+        color: #F2F0D5;
+        margin: 0;
+        letter-spacing: 0.1rem;
+        text-align: center;
+    }
+
+    .bigpic {
+        padding: 0 1rem;
+    }
+
+    .bigpic p {
+        text-align: center;
+    }
+
+
+    .navbar {
+        justify-content: space-evenly;
+    }
+
+    .navbar .navitem {
+        padding-right: 1rem !important;
+    }
+
+
+    .footernav {
+        justify-content: space-evenly;
+    }
+
+    .footernav .navitem {
+        padding-right: 1rem !important;
+        padding-left: 0 !important;
+
+    }
+}
